@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Fahry - Neo Brutalism</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <!-- Devicon for Reliable Tech Logos -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="text-black overflow-x-hidden selection:bg-cyan-300 selection:text-black">
+
+    <!-- Navbar -->
+    <nav
+        class="fixed top-0 w-full bg-white brutal-border border-t-0 border-l-0 border-r-0 z-50 flex justify-between items-center px-4 md:px-8 py-4 brutal-shadow-sm">
+        <div
+            class="text-2xl font-black uppercase tracking-tighter hover:-rotate-3 transition-transform cursor-pointer bg-black text-white px-3 py-1 brutal-border shadow-[4px_4px_0px_#ccc]">
+            Fahry.</div>
+        <div class="hidden lg:flex gap-8 font-extrabold text-lg">
+            <a href="#about"
+                class="hover:bg-cyan-300 px-3 py-1 transition-colors border-2 border-transparent hover:border-black uppercase">Beranda</a>
+            <a href="#arsenal"
+                class="hover:bg-rose-400 px-3 py-1 transition-colors border-2 border-transparent hover:border-black uppercase">Arsenal</a>
+            <a href="#journey"
+                class="hover:bg-fuchsia-400 px-3 py-1 transition-colors border-2 border-transparent hover:border-black uppercase">Perjalanan</a>
+            <a href="#projects"
+                class="hover:bg-emerald-400 px-3 py-1 transition-colors border-2 border-transparent hover:border-black uppercase">Proyek</a>
+        </div>
+        <a href="#contact"
+            class="bg-yellow-400 brutal-border px-8 py-3 font-black uppercase text-sm brutal-shadow-sm brutal-shadow-sm-hover hidden md:block tracking-widest">
+            Contact Me
+        </a>
+    </nav>
+
+    <!-- 1. Hero / About Me -->
+    <section id="about"
+        class="min-h-screen bg-cyan-300 bg-grid bg-grid-animated relative border-b-4 border-black flex flex-col justify-center pt-28 pb-12 px-6 overflow-hidden">
+
+        <!-- Diagonal Police Line Background (Animated Marquee) -->
+        <div
+            class="absolute top-[40%] left-[-10%] w-[120%] h-20 bg-police-line brutal-border border-l-0 border-r-0 transform -rotate-6 z-0 flex items-center overflow-hidden">
+            <div class="animate-marquee-fast flex whitespace-nowrap text-3xl font-black uppercase text-black z-10 w-[200%] gap-4"
+                style="text-shadow: 2px 2px 0px #fff;">
+                <span>DO NOT CROSS &bull; POLICE LINE &bull; DO NOT CROSS &bull; POLICE LINE &bull; DO NOT CROSS &bull;
+                    POLICE LINE &bull; DO NOT CROSS &bull; POLICE LINE &bull; DO NOT CROSS &bull; POLICE LINE &bull; DO
+                    NOT CROSS &bull; POLICE LINE</span>
+            </div>
+        </div>
+
+        <!-- Floating Geo Shapes for Background -->
+        <div
+            class="float-shape top-32 left-10 w-16 h-16 bg-pink-400 brutal-border hidden lg:block brutal-shadow-sm z-0">
+        </div>
+        <div
+            class="float-shape float-shape-2 bottom-20 right-[40%] w-20 h-20 bg-yellow-400 brutal-border rounded-full hidden md:block brutal-shadow-sm z-0">
+        </div>
+
+        <!-- NEW: Redesigned Fan-Out ID Card -->
+        <div class="absolute top-0 right-[5%] md:right-[15%] z-20 animate-swing flex flex-col items-center">
+
+            <!-- Significantly Lengthened Lanyard String -->
+            <div class="w-3 h-40 md:h-[18rem] bg-black brutal-border border-t-0 border-b-0 shadow-lg z-10 relative">
+            </div>
+
+            <!-- Badge Clip at TOP CENTER -->
+            <div class="w-12 h-6 bg-gray-400 brutal-border relative -mt-1 shadow-lg z-30">
+                <div class="w-4 h-4 bg-white border-2 border-black rounded-full mx-auto mt-[1px]"></div>
+            </div>
+
+            <!-- 3-Layer Stacked ID Badge with Fan-Out Hover -->
+            <div class="w-64 h-[26rem] -mt-2 z-20 relative cursor-pointer group">
+
+                <!-- LAYER 3 / BOTTOM (Back, z-10): Dummy image card -->
+                <div
+                    class="absolute inset-0 brutal-border rounded-2xl overflow-hidden brutal-shadow z-10 transition-all duration-500 ease-out group-hover:translate-x-[55%] group-hover:rotate-12">
+                    <img src="foto/hb.jpg" class="object-cover w-full h-full" alt="Back Card" />
+                </div>
+
+                <!-- LAYER 2 / MIDDLE (z-20): Dummy image card -->
+                <div
+                    class="absolute inset-0 brutal-border rounded-2xl overflow-hidden brutal-shadow z-20 transition-all duration-500 ease-out group-hover:-translate-x-[55%] group-hover:-rotate-12">
+                    <img src="foto/okik.jpg" class="object-cover w-full h-full" alt="Middle Card" />
+                </div>
+
+                <!-- LAYER 1 / TOP (Front, z-30): Real ID Card -->
+                <div
+                    class="absolute inset-0 bg-white brutal-border rounded-2xl flex flex-col overflow-hidden brutal-shadow z-30 transition-all duration-500 ease-out group-hover:-translate-y-4">
+                    <!-- Photo Placeholder (Top 70%) -->
+                    <div class="w-full bg-green-200 border-b-4 border-black relative flex flex-col justify-center items-center overflow-hidden"
+                        style="height: 70%;">
+                        <img src="foto/IMG-20260704-WA0112.jpg" alt="Fahry Foto"
+                            class="object-cover w-full h-full absolute inset-0 z-10" />
+                    </div>
+                    <!-- Bottom 30% Info -->
+                    <div class="w-full bg-white flex flex-col items-center justify-center relative p-3 pt-4"
+                        style="height: 30%;">
+                        <h3 class="text-4xl font-black uppercase text-black leading-none mb-1 tracking-tighter">FAHRY
+                        </h3>
+                        <p class="font-extrabold text-blue-600 text-[0.9rem] uppercase tracking-[0.2em]">DEVELOPER</p>
+                        <div
+                            class="absolute bottom-0 left-0 w-full h-3 bg-white flex justify-center items-center border-t-2 border-black">
+                            <div class="w-full h-full opacity-90"
+                                style="background: repeating-linear-gradient(90deg, #000, #000 3px, #fff 3px, #fff 5px, #000 5px, #000 8px, #fff 8px, #fff 11px);">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="max-w-7xl mx-auto flex flex-col items-start gap-12 z-10 w-full pt-48 md:pt-24 pointer-events-none">
+            <!-- Text Content -->
+            <div class="w-full md:w-3/5 relative pointer-events-auto">
+                <div
+                    class="inline-block bg-black text-white font-bold px-4 py-2 uppercase mb-8 transform -rotate-1 brutal-border shadow-[4px_4px_0px_#fff]">
+                    <span>SMK Negeri 1 Jenangan &bull; Rekayasa Perangkat Lunak</span>
+                </div>
+
+                <!-- Stronger Title -->
+                <h1
+                    class="text-6xl md:text-[6rem] font-black uppercase leading-[0.9] tracking-tighter mb-8 bg-white opacity-95 inline-block p-4 brutal-border brutal-shadow relative z-10">
+                    Junior Web<br>
+                    <span
+                        class="bg-yellow-400 inline-block brutal-border px-4 py-1 transform rotate-1 mt-2 brutal-shadow">
+                        Developer.</span>
+                </h1>
+
+                <div
+                    class="bg-white brutal-border brutal-shadow p-8 transform -rotate-1 relative mt-16 md:max-w-2xl z-10">
+                    <div
+                        class="absolute -top-4 left-1/2 transform -translate-x-1/2 w-24 h-8 bg-gray-200 opacity-80 backdrop-blur-sm -rotate-2 mix-blend-multiply border-2 border-gray-300">
+                    </div>
+
+                    <h2 class="text-3xl font-black mb-6 uppercase inline-block border-b-4 border-black pb-1">About Me
+                    </h2>
+
+                    <p class="text-lg md:text-xl font-bold leading-relaxed text-gray-800">
+                        Perkenalkan, saya <strong>Akhmad Fahry Nassrullah</strong>. Saat ini, saya merupakan siswa aktif
+                        kelas 12 pada
+                        kompetensi keahlian <strong>Rekayasa Perangkat Lunak / Softwere Engineering (RPL)</strong> di
+                        <strong>SMK Negeri 1
+                            Jenangan</strong>.
+                        Saya telah memvalidasi kemampuan akademis saya melalui partisipasi dalam ekosistem industri
+                        profesional, seperti program Praktik Kerja Lapangan (PKL) di <strong>Vernorn Corp</strong>.
+                        <br><br>
+                        Fokus utama saya terletak pada arsitektur web modern, pengembangan antarmuka pengguna (UI/UX)
+                        dan rekayasa perangkat lunak skala korporat.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. My Arsenal (Tech Stack Section) -->
+    <section id="arsenal" class="py-24 px-6 bg-rose-400 border-b-4 border-black relative bg-dots">
+        <div class="max-w-7xl mx-auto z-10 relative">
+            <div class="flex justify-center mb-20">
+                <h2
+                    class="text-5xl md:text-7xl font-black uppercase text-center bg-black text-white inline-block px-10 py-4 brutal-border brutal-shadow transform rotate-2">
+                    Arsenal Saya
+                </h2>
+            </div>
+
+            <!-- Using Devicons & SimpleIcons for SVG Graphics -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-8">
+                <!-- Languages -->
+                <div
+                    class="bg-white brutal-border brutal-shadow-hover p-8 md:p-10 transform -rotate-2 hover:rotate-0 transition-transform flex flex-col">
+                    <h3
+                        class="text-3xl font-black uppercase mb-8 pb-3 border-b-4 border-black inline-block text-rose-500 w-fit">
+                        Bahasa</h3>
+                    <div class="grid grid-cols-1 gap-4">
+                        <div
+                            class="bg-white brutal-border px-6 py-4 font-black flex items-center justify-between brutal-shadow-sm uppercase">
+                            <span class="text-lg">JavaScript</span>
+                            <i class="devicon-javascript-plain colored text-4xl leading-none"></i>
+                        </div>
+                        <div
+                            class="bg-white brutal-border px-6 py-4 font-black flex items-center justify-between brutal-shadow-sm uppercase">
+                            <span class="text-lg">TypeScript</span>
+                            <i class="devicon-typescript-plain colored text-4xl leading-none"></i>
+                        </div>
+                        <div
+                            class="bg-white brutal-border px-6 py-4 font-black flex items-center justify-between brutal-shadow-sm uppercase">
+                            <span class="text-lg">PHP</span>
+                            <i class="devicon-php-plain colored text-4xl leading-none"></i>
+                        </div>
+                        <div
+                            class="bg-white brutal-border px-6 py-4 font-black flex items-center justify-between brutal-shadow-sm uppercase">
+                            <span class="text-lg">HTML</span>
+                            <i class="devicon-html5-plain colored text-4xl leading-none"></i>
+                        </div>
+                        <div
+                            class="bg-white brutal-border px-6 py-4 font-black flex items-center justify-between brutal-shadow-sm uppercase">
+                            <span class="text-lg">CSS</span>
+                            <i class="devicon-css3-plain colored text-4xl leading-none"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Frameworks & Libraries -->
+                <div
+                    class="bg-white brutal-border brutal-shadow-hover p-8 md:p-10 transform rotate-1 md:-mt-6 hover:rotate-0 transition-transform flex flex-col">
+                    <h3
+                        class="text-3xl font-black uppercase mb-8 pb-3 border-b-4 border-black inline-block text-cyan-500 w-fit">
+                        Kerangka Kerja</h3>
+                    <div class="flex flex-col gap-4">
+                        <div
+                            class="bg-white brutal-border px-6 py-4 font-black flex items-center justify-between brutal-shadow-sm uppercase">
+                            <span class="text-lg">React</span>
+                            <i class="devicon-react-original colored text-4xl leading-none"></i>
+                        </div>
+                        <div
+                            class="bg-black text-white brutal-border px-6 py-4 font-black flex items-center justify-between brutal-shadow-sm uppercase">
+                            <span class="text-lg">Next.js</span>
+                            <i class="devicon-nextjs-original text-white text-4xl leading-none"></i>
+                        </div>
+                        <div
+                            class="bg-white brutal-border px-6 py-4 font-black flex items-center justify-between brutal-shadow-sm uppercase">
+                            <span class="text-lg">Tailwind CSS</span>
+                            <i class="devicon-tailwindcss-original colored text-4xl leading-none"></i>
+                        </div>
+                        <div
+                            class="bg-white brutal-border px-6 py-4 font-black flex items-center justify-between brutal-shadow-sm uppercase">
+                            <span class="text-lg">Laravel</span>
+                            <i class="devicon-laravel-original colored text-4xl leading-none"></i>
+                        </div>
+                        <div
+                            class="bg-white brutal-border px-6 py-4 font-black flex items-center justify-between brutal-shadow-sm uppercase">
+                            <span class="text-lg">Expo</span>
+                            <img src="https://cdn.simpleicons.org/expo/000000" alt="Expo" class="w-9 h-9" />
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Apps & Tools -->
+                <div
+                    class="bg-white brutal-border brutal-shadow-hover p-8 md:p-10 transform -rotate-1 md:mt-8 hover:rotate-0 transition-transform flex flex-col">
+                    <h3
+                        class="text-3xl font-black uppercase mb-8 pb-3 border-b-4 border-black inline-block text-emerald-500 w-fit">
+                        Infrastruktur</h3>
+                    <div class="flex flex-col gap-4">
+                        <div class="grid grid-cols-2 gap-4">
+                            <div
+                                class="bg-white brutal-border p-4 font-black text-center flex flex-col items-center justify-center gap-2 brutal-shadow-sm">
+                                <i class="devicon-git-plain colored text-5xl"></i> <span>Git</span>
+                            </div>
+                            <div
+                                class="bg-white brutal-border p-4 font-black text-center flex flex-col items-center justify-center gap-2 brutal-shadow-sm">
+                                <i class="devicon-github-original text-black text-5xl"></i> <span>GitHub</span>
+                            </div>
+                            <div
+                                class="bg-white brutal-border p-4 font-black text-center flex flex-col items-center justify-center gap-2 brutal-shadow-sm">
+                                <i class="devicon-vscode-plain colored text-5xl"></i> <span>VS Code</span>
+                            </div>
+                            <div
+                                class="bg-white brutal-border p-4 font-black text-center flex flex-col items-center justify-center gap-2 brutal-shadow-sm px-1">
+                                <i class="devicon-supabase-plain colored text-5xl"></i> <span>Supabase</span>
+                            </div>
+                            <div
+                                class="bg-white brutal-border p-4 font-black text-center flex flex-col items-center justify-center gap-2 brutal-shadow-sm px-1">
+                                <i class="devicon-postgresql-plain colored text-5xl"></i> <span>PostgreSQL</span>
+                            </div>
+                        </div>
+                        <div
+                            class="bg-black text-white brutal-border px-6 py-4 font-black flex items-center justify-between brutal-shadow-sm uppercase">
+                            <span class="text-lg">Vercel</span>
+                            <i class="devicon-vercel-original text-white text-4xl leading-none"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Marquee Transition -->
+    <div
+        class="w-full bg-black text-white font-extrabold uppercase text-xl py-3 flex overflow-hidden border-b-4 border-black z-10 relative">
+        <div class="animate-marquee flex gap-8 min-w-full items-center whitespace-nowrap">
+            <span>PERJALANAN KARIER &bull; PENGALAMAN PROFESIONAL &bull; SERTIFIKASI &bull; </span>
+            <span>PERJALANAN KARIER &bull; PENGALAMAN PROFESIONAL &bull; SERTIFIKASI &bull; </span>
+            <span>PERJALANAN KARIER &bull; PENGALAMAN PROFESIONAL &bull; SERTIFIKASI &bull; </span>
+            <span>PERJALANAN KARIER &bull; PENGALAMAN PROFESIONAL &bull; SERTIFIKASI &bull; </span>
+            <span>PERJALANAN KARIER &bull; PENGALAMAN PROFESIONAL &bull; SERTIFIKASI &bull; </span>
+        </div>
+    </div>
+
+    <!-- 3. The Journey (Experience Page) -->
+    <!-- bg-grid-animated (slow pan) to background -->
+    <section id="journey"
+        class="py-24 px-6 bg-yellow-400 border-b-4 border-black relative overflow-hidden bg-grid bg-grid-animated">
+
+        <!-- Journey Floating Corner Photos (Bleeding & Staggered) -->
+        <div
+            class="absolute top-[-2rem] left-[-4rem] w-64 h-[26rem] bg-white brutal-border brutal-shadow transform -rotate-12 float-shape float-shape-2 z-0 hidden lg:flex flex-col overflow-hidden p-3 scale-110">
+            <div class="w-full h-full bg-gray-200 border-4 border-black relative overflow-hidden grayscale opacity-90">
+                <!-- Tag <span> dihapus, langsung masukkan <img> -->
+                <img src="foto/f.jpg" alt="Fahry Foto" class="object-cover w-full h-full absolute inset-0" />
+            </div>
+        </div>
+        <div
+            class="absolute top-[30%] right-[-5rem] w-64 h-[26rem] bg-white brutal-border brutal-shadow transform rotate-12 float-shape z-0 hidden lg:flex flex-col overflow-hidden p-3 delay-500 scale-110">
+            <div
+                class="w-full h-full bg-gray-300 border-4 border-black relative flex justify-center items-center overflow-hidden grayscale opacity-90">
+                <img src="foto/kk.jpg" alt="Fahry Foto" class="object-cover w-full h-full absolute inset-0" />
+            </div>
+        </div>
+
+        <div class="max-w-4xl mx-auto z-10 relative bg-white brutal-border brutal-shadow p-8 md:p-16 mt-16 md:mt-0">
+            <h2
+                class="text-5xl md:text-7xl font-black uppercase text-center mb-16 px-4 py-2 transform -rotate-1 relative inline-block">
+                Jejak Perjalanan
+                <div class="absolute -bottom-2 left-0 w-full h-2 bg-black"></div>
+            </h2>
+
+            <!-- Timeline Chronological (Oldest to Newest) -->
+            <div class="relative border-l-8 border-black ml-4 md:ml-12 pl-10 md:pl-16 space-y-20">
+
+                <!-- Timeline Item 1: SMKN 1 Jenangan -->
+                <div class="relative">
+                    <div
+                        class="absolute -left-[54px] md:-left-[78px] top-4 w-10 h-10 bg-white brutal-border transform rotate-45 z-10 brutal-shadow-sm">
+                    </div>
+
+                    <div class="w-full max-w-2xl transform transition-transform hover:translate-x-2">
+                        <div class="flex flex-col sm:flex-row justify-between items-start mb-4 gap-2">
+                            <h3 class="text-3xl font-black uppercase">SMK Negeri 1 Jenangan</h3>
+                            <span
+                                class="bg-black text-white px-4 py-1 font-bold text-sm transform -rotate-2 brutal-border">Siswa
+                                RPL</span>
+                        </div>
+                        <h4
+                            class="text-xl font-black mb-4 text-gray-600 bg-gray-100 inline-block px-2 border-2 border-dashed border-gray-400">
+                            Pendidikan Vokasi Kejuruan</h4>
+                        <p class="font-bold text-lg leading-relaxed text-gray-800">
+                            Awal mula saya menempuh jenjang pendidikan formal di bidang Rekayasa Perangkat Lunak.
+                            Mempelajari logika pemrograman dan fundamental teknologi.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 2: Bootcamp Dicoding x Indosat -->
+                <div class="relative">
+                    <div
+                        class="absolute -left-[54px] md:-left-[78px] top-4 w-10 h-10 bg-rose-400 brutal-border transform rotate-45 z-10 brutal-shadow-sm">
+                    </div>
+
+                    <div class="w-full max-w-2xl transform transition-transform hover:translate-x-2">
+                        <div class="flex flex-col sm:flex-row justify-between items-start mb-4 gap-2">
+                            <h3 class="text-3xl font-black uppercase">Dicoding x Indosat</h3>
+                            <span
+                                class="bg-rose-500 text-white px-4 py-1 font-bold text-sm transform rotate-1 brutal-border">Peserta
+                                Bootcamp</span>
+                        </div>
+                        <h4
+                            class="text-xl font-black mb-4 text-rose-700 bg-rose-100 inline-block px-2 border-2 border-dashed border-rose-300">
+                            Frontend Web Developer Course</h4>
+                        <p class="font-bold text-lg leading-relaxed text-gray-800">
+                            Meningkatkan kapasitas teknis secara terstruktur dan intensif melalui kursus terapan
+                            kolaboratif mengenai rekayasa struktur Frontend terkini.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 3: Vernorn Corp -->
+                <div class="relative">
+                    <div
+                        class="absolute -left-[54px] md:-left-[78px] top-4 w-10 h-10 bg-cyan-400 brutal-border transform rotate-45 z-10 brutal-shadow-sm">
+                    </div>
+
+                    <div class="w-full max-w-2xl transform transition-transform hover:translate-x-2">
+                        <div class="flex flex-col sm:flex-row justify-between items-start mb-4 gap-2">
+                            <h3 class="text-3xl font-black uppercase">Vernorn Corp</h3>
+                            <span
+                                class="bg-cyan-500 text-white px-4 py-1 font-bold text-sm transform -rotate-1 brutal-border">Praktik
+                                Kerja (PKL)</span>
+                        </div>
+                        <h4
+                            class="text-xl font-black mb-4 text-cyan-800 bg-cyan-100 inline-block px-2 border-2 border-dashed border-cyan-400">
+                            Frontend Intern</h4>
+                        <p class="font-bold text-lg leading-relaxed text-gray-800">
+                            Terjun secara profesional memecahkan permasalahan proyek industri di ranah nyata, menguasai
+                            kolaborasi enterprise dan penyusunan desain UI yang responsif.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 4: Bootcamp Dicoding x AWS -->
+                <div class="relative">
+                    <div
+                        class="absolute -left-[54px] md:-left-[78px] top-4 w-10 h-10 bg-blue-500 brutal-border transform rotate-45 z-10 brutal-shadow-sm">
+                    </div>
+
+                    <div class="w-full max-w-2xl transform transition-transform hover:translate-x-2">
+                        <div class="flex flex-col sm:flex-row justify-between items-start mb-4 gap-2">
+                            <h3 class="text-3xl font-black uppercase">Dicoding x AWS</h3>
+                            <span
+                                class="bg-blue-600 text-white px-4 py-1 font-bold text-sm transform rotate-2 brutal-border">Peserta
+                                Beasiswa</span>
+                        </div>
+                        <h4
+                            class="text-xl font-black mb-4 text-blue-800 bg-blue-100 inline-block px-2 border-2 border-dashed border-blue-400">
+                            Cloud & Web Development Course</h4>
+                        <p class="font-bold text-lg leading-relaxed text-gray-800">
+                            Pemantapan tingkat mahir terkait infrastruktur web komprehensif sembari berinteraksi dengan
+                            kurikulum modern berstandar Amazon Web Services.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Projects Page -->
+    <section id="projects" class="py-24 px-6 bg-emerald-400 border-b-4 border-black bg-dots">
+        <div class="max-w-7xl mx-auto z-10 relative">
+            <div class="flex flex-col md:flex-row justify-between items-center mb-20 gap-8">
+                <h2
+                    class="text-5xl md:text-7xl font-black uppercase bg-white inline-block px-10 py-4 brutal-border brutal-shadow transform rotate-1">
+                    Karya Pilihan
+                </h2>
+                <div
+                    class="bg-black text-white brutal-border p-5 brutal-shadow-sm transform -rotate-1 max-w-sm text-center md:text-right">
+                    <p class="text-xl font-bold">
+                        Implementasi nyata dari keahlian teknis menjadi perangkat lunak berskala besar yang kompetitif.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Restore grid exactly perfectly displaying 4 projects -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16">
+                <!-- Project 1 -->
+                <div
+                    class="bg-white brutal-border brutal-shadow-hover flex flex-col group p-4 transform transition-transform hover:-translate-y-2">
+                    <div
+                        class="h-72 bg-gray-200 brutal-border flex items-center justify-center overflow-hidden relative mb-6">
+                        <div
+                            class="absolute inset-0 bg-yellow-400 opacity-0 group-hover:opacity-60 transition-opacity z-10 mix-blend-multiply">
+                        </div>
+                        <span
+                            class="font-bold text-2xl text-black bg-white px-8 py-3 brutal-border transform -rotate-3 z-20 brutal-shadow-sm">Pratinjau
+                            Proyek 1</span>
+                    </div>
+                    <div class="px-2 pb-2 flex-grow flex flex-col justify-between">
+                        <div>
+                            <h3
+                                class="text-4xl font-black uppercase mb-4 decoration-4 underline-offset-4 group-hover:underline">
+                                Manajemen Tugas Terintegrasi</h3>
+                            <p class="font-bold text-gray-700 text-lg mb-8 line-clamp-3 leading-relaxed">
+                                Kehebatan aplikasi platform canggih yang dirancang secara khusus untuk memantau progres
+                                harian siswa dengan interaksi tanpa batas waktu.
+                            </p>
+                        </div>
+                        <a href="#"
+                            class="inline-block text-center bg-black text-white px-6 py-5 font-black text-xl brutal-border border-black hover:bg-yellow-400 hover:text-black mt-auto uppercase tracking-widest transition-colors shadow-[6px_6px_0px_#facc15]">
+                            Tinjau Proyek &rarr;
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div
+                    class="bg-white brutal-border brutal-shadow-hover flex flex-col group p-4 transform transition-transform hover:-translate-y-2 md:mt-16">
+                    <div
+                        class="h-72 bg-gray-200 brutal-border flex items-center justify-center overflow-hidden relative mb-6">
+                        <div
+                            class="absolute inset-0 bg-cyan-400 opacity-0 group-hover:opacity-60 transition-opacity z-10 mix-blend-multiply">
+                        </div>
+                        <span
+                            class="font-bold text-2xl text-black bg-white px-8 py-3 brutal-border transform rotate-3 z-20 brutal-shadow-sm">Pratinjau
+                            Proyek 2</span>
+                    </div>
+                    <div class="px-2 pb-2 flex-grow flex flex-col justify-between">
+                        <div>
+                            <h3
+                                class="text-4xl font-black uppercase mb-4 decoration-4 underline-offset-4 group-hover:underline">
+                                SIM Sekolah Terpadu</h3>
+                            <p class="font-bold text-gray-700 text-lg mb-8 line-clamp-3 leading-relaxed">
+                                Sistem Informasi Manajemen khusus untuk pencatatan keamanan dan absensi harian yang saya
+                                kembangkan secara masif dengan para pakar selama PKL.
+                            </p>
+                        </div>
+                        <a href="#"
+                            class="inline-block text-center bg-black text-white px-6 py-5 font-black text-xl brutal-border border-black hover:bg-cyan-400 hover:text-black mt-auto uppercase tracking-widest transition-colors shadow-[6px_6px_0px_#22d3ee]">
+                            Tinjau Proyek &rarr;
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div
+                    class="bg-white brutal-border brutal-shadow-hover flex flex-col group p-4 transform transition-transform hover:-translate-y-2">
+                    <div
+                        class="h-72 bg-gray-200 brutal-border flex items-center justify-center overflow-hidden relative mb-6">
+                        <div
+                            class="absolute inset-0 bg-rose-400 opacity-0 group-hover:opacity-60 transition-opacity z-10 mix-blend-multiply">
+                        </div>
+                        <span
+                            class="font-bold text-2xl text-black bg-white px-8 py-3 brutal-border transform -rotate-1 z-20 brutal-shadow-sm">Pratinjau
+                            Proyek 3</span>
+                    </div>
+                    <div class="px-2 pb-2 flex-grow flex flex-col justify-between">
+                        <div>
+                            <h3
+                                class="text-4xl font-black uppercase mb-4 decoration-4 underline-offset-4 group-hover:underline">
+                                Eksplorasi UI Brutalism</h3>
+                            <p class="font-bold text-gray-700 text-lg mb-8 line-clamp-3 leading-relaxed">
+                                Merombak total paradigma antarmuka aplikasi terpopuler dengan pendekatan desain
+                                Neo-Brutalism ekstrim. Proyek eksperimental yang memukau.
+                            </p>
+                        </div>
+                        <a href="#"
+                            class="inline-block text-center bg-black text-white px-6 py-5 font-black text-xl brutal-border border-black hover:bg-rose-400 hover:text-black mt-auto uppercase tracking-widest transition-colors shadow-[6px_6px_0px_#fb7185]">
+                            Tinjau Proyek &rarr;
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div
+                    class="bg-white brutal-border brutal-shadow-hover flex flex-col group p-4 transform transition-transform hover:-translate-y-2 md:mt-16">
+                    <div
+                        class="h-72 bg-gray-200 brutal-border flex items-center justify-center overflow-hidden relative mb-6">
+                        <div
+                            class="absolute inset-0 bg-indigo-400 opacity-0 group-hover:opacity-60 transition-opacity z-10 mix-blend-multiply">
+                        </div>
+                        <span
+                            class="font-bold text-2xl text-black bg-white px-8 py-3 brutal-border transform rotate-2 z-20 brutal-shadow-sm">Pratinjau
+                            Proyek 4</span>
+                    </div>
+                    <div class="px-2 pb-2 flex-grow flex flex-col justify-between">
+                        <div>
+                            <h3
+                                class="text-4xl font-black uppercase mb-4 decoration-4 underline-offset-4 group-hover:underline">
+                                Portofolio Versi Beta</h3>
+                            <p class="font-bold text-gray-700 text-lg mb-8 line-clamp-3 leading-relaxed">
+                                Portofolio digital historis saya yang dirancang secara fundamental pada fase awal
+                                menempuh pendidikan kejuruan sebagai galeri tugas akademik yang bermakna.
+                            </p>
+                        </div>
+                        <a href="#"
+                            class="inline-block text-center bg-black text-white px-6 py-5 font-black text-xl brutal-border border-black hover:bg-indigo-400 hover:text-black mt-auto uppercase tracking-widest transition-colors shadow-[6px_6px_0px_#818cf8]">
+                            Tinjau Proyek &rarr;
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Final Page / Contact (Footer Section) -->
+    <!-- Added bg-grid back -->
+    <section id="contact"
+        class="py-40 px-6 bg-white bg-grid flex flex-col items-center justify-center text-center relative overflow-hidden border-b-8 border-black">
+
+        <!-- Diagonal Police Line Background exactly like Hero section -->
+        <div
+            class="absolute top-[20%] left-[-10%] w-[120%] h-20 bg-police-line brutal-border border-l-0 border-r-0 transform -rotate-[5deg] z-0 flex items-center overflow-hidden">
+            <div class="animate-marquee-fast flex whitespace-nowrap text-3xl font-black uppercase text-black z-10 w-[200%] gap-4"
+                style="text-shadow: 2px 2px 0px #fff;">
+                <span>DO NOT CROSS &bull; POLICE LINE &bull; DO NOT CROSS &bull; POLICE LINE &bull; DO NOT CROSS &bull;
+                    POLICE LINE &bull; DO NOT CROSS &bull; POLICE LINE &bull; DO NOT CROSS &bull; POLICE LINE &bull; DO
+                    NOT CROSS &bull; POLICE LINE</span>
+            </div>
+        </div>
+
+        <!-- 4 absolute floating pieces (Card Suits) for the background on top of bg-grid -->
+        <div class="float-shape top-[10%] left-[10%] text-[6rem] md:text-[8rem] text-black z-0 opacity-80 rotate-12">♠
+        </div>
+        <div
+            class="float-shape float-shape-2 top-[60%] right-[15%] text-[6rem] md:text-[8rem] text-rose-500 z-0 opacity-80 -rotate-12">
+            ♦</div>
+        <div class="float-shape top-[30%] right-[10%] text-[6rem] md:text-[8rem] text-black z-0 opacity-80 -rotate-6"
+            style="animation-delay: 2s;">♣</div>
+        <div class="float-shape float-shape-2 bottom-[10%] left-[15%] text-[6rem] md:text-[8rem] text-rose-500 z-0 opacity-80 rotate-6"
+            style="animation-delay: 3s;">♥</div>
+
+        <div class="max-w-5xl w-full z-10 relative">
+            <h2
+                class="text-6xl md:text-[6.5rem] font-black uppercase mb-16 leading-[0.95] tracking-tighter bg-white shadow-[8px_8px_0px_#000] border-4 border-black inline-block p-6">
+                Lets Build<br>
+                Something Amazing Together.
+            </h2>
+
+            <p
+                class="text-2xl font-bold mb-24 bg-yellow-400 inline-block px-10 py-5 brutal-border transform -rotate-1 brutal-shadow-sm w-full md:w-auto">
+                Want to collaborate? Contact me now.
+            </p>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-10 w-full max-w-4xl mx-auto">
+                <a href="https://www.instagram.com/ahfhryns?igsi=MTV1emM1bnl6aTQ4MQ=="
+                    class="bg-rose-400 brutal-border brutal-shadow-hover py-8 px-6 text-2xl font-black uppercase flex items-center gap-6 group hover:-translate-y-2 transition-transform bg-opacity-95 backdrop-blur">
+                    <div class="bg-white p-3 brutal-border"><img src="https://cdn.simpleicons.org/instagram/E4405F"
+                            alt="IG" class="w-10 h-10" /></div>
+                    <span>Instagram</span>
+                </a>
+                <a href="https://www.tiktok.com/@fryy.._?_r=1&_t=ZS-99PUwJAcPCi"
+                    class="bg-black text-white brutal-border brutal-shadow-hover py-8 px-6 text-2xl font-black uppercase flex items-center gap-6 group hover:-translate-y-2 transition-transform shadow-[8px_8px_0px_#9ca3af]">
+                    <div class="bg-white p-3 brutal-border"><img src="https://cdn.simpleicons.org/tiktok/000000"
+                            alt="TikTok" class="w-10 h-10" /></div>
+                    <span>TikTok</span>
+                </a>
+                <a href="mailto:geatz503@gmail.com"
+                    class="bg-cyan-400 brutal-border brutal-shadow-hover py-8 px-6 text-2xl font-black uppercase flex items-center gap-6 group hover:-translate-y-2 transition-transform bg-opacity-95 backdrop-blur">
+                    <div class="bg-white p-3 brutal-border"><img src="https://cdn.simpleicons.org/gmail/EA4335"
+                            alt="Email" class="w-10 h-10" /></div>
+                    <span>Email</span>
+                </a>
+                <a href="https://wa.me/6281558607695"
+                    class="bg-emerald-400 brutal-border brutal-shadow-hover py-8 px-6 text-2xl font-black uppercase flex items-center gap-6 group hover:-translate-y-2 transition-transform bg-opacity-95 backdrop-blur">
+                    <div class="bg-white p-3 brutal-border"><img src="https://cdn.simpleicons.org/whatsapp/25D366"
+                            alt="WA" class="w-10 h-10" /></div>
+                    <span>WhatsApp</span>
+                </a>
+            </div>
+
+            <!-- Playing Card Deck Footer -->
+            <div class="relative mx-auto mt-40 w-64 h-64 z-20 group cursor-pointer">
+                <!-- Card 1 -->
+                <div
+                    class="absolute top-6 left-8 w-32 h-48 bg-black brutal-border rounded-xl text-white p-2 flex flex-col justify-between transform -rotate-12 origin-bottom shadow-[4px_4px_0px_rgba(0,0,0,0.5)] transition-all duration-700 ease-out group-hover:-translate-x-32 group-hover:-translate-y-4 group-hover:-rotate-[40deg]">
+                    <span class="text-xl font-black font-sans leading-none">A<br><span
+                            class="text-2xl">&spades;</span></span>
+                    <span class="text-6xl self-center font-black">&spades;</span>
+                    <span class="text-xl font-black font-sans rotate-180 leading-none">A<br><span
+                            class="text-2xl">&spades;</span></span>
+                </div>
+                <!-- Card 2 -->
+                <div
+                    class="absolute top-2 left-12 w-32 h-48 bg-black brutal-border rounded-xl text-rose-500 p-2 flex flex-col justify-between transform -rotate-3 origin-bottom shadow-[4px_4px_0px_rgba(0,0,0,0.5)] transition-all duration-700 ease-out group-hover:-translate-x-12 group-hover:-translate-y-12 group-hover:-rotate-[15deg]">
+                    <span class="text-xl font-black font-sans leading-none">A<br><span
+                            class="text-2xl">&hearts;</span></span>
+                    <span class="text-6xl self-center font-black">&hearts;</span>
+                    <span class="text-xl font-black font-sans rotate-180 leading-none">A<br><span
+                            class="text-2xl">&hearts;</span></span>
+                </div>
+                <!-- Card 3 -->
+                <div
+                    class="absolute top-1 left-16 w-32 h-48 bg-black brutal-border rounded-xl text-white p-2 flex flex-col justify-between transform rotate-3 origin-bottom shadow-[4px_4px_0px_rgba(0,0,0,0.5)] transition-all duration-700 ease-out group-hover:translate-x-12 group-hover:-translate-y-12 group-hover:rotate-[15deg]">
+                    <span class="text-xl font-black font-sans leading-none">A<br><span
+                            class="text-2xl">&clubs;</span></span>
+                    <span class="text-6xl self-center font-black">&clubs;</span>
+                    <span class="text-xl font-black font-sans rotate-180 leading-none">A<br><span
+                            class="text-2xl">&clubs;</span></span>
+                </div>
+                <!-- Card 4 -->
+                <div
+                    class="absolute top-4 left-20 w-32 h-48 bg-black brutal-border rounded-xl text-rose-500 p-2 flex flex-col justify-between transform rotate-12 origin-bottom shadow-[4px_4px_0px_rgba(0,0,0,0.5)] transition-all duration-700 ease-out group-hover:translate-x-32 group-hover:-translate-y-4 group-hover:rotate-[40deg]">
+                    <span class="text-xl font-black font-sans leading-none">A<br><span
+                            class="text-2xl">&diams;</span></span>
+                    <span class="text-6xl self-center font-black">&diams;</span>
+                    <span class="text-xl font-black font-sans rotate-180 leading-none">A<br><span
+                            class="text-2xl">&diams;</span></span>
+                </div>
+
+                <!-- The Box -->
+
+            </div>
+        </div>
+    </section>
+
+    <!-- External Script JS -->
+    <script src="script.js"></script>
+</body>
+
+</html>

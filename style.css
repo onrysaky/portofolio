@@ -1,0 +1,163 @@
+body {
+    font-family: 'Space Grotesk', sans-serif;
+    background-color: #fcfbf7;
+}
+
+/* Neo-Brutalism Utilities */
+.brutal-border {
+    border: 4px solid #000;
+}
+.brutal-shadow {
+    box-shadow: 8px 8px 0px 0px rgba(0,0,0,1);
+}
+.brutal-shadow-hover {
+    transition: all 0.2s ease-in-out;
+}
+.brutal-shadow-hover:hover {
+    box-shadow: 12px 12px 0px 0px rgba(0,0,0,1);
+    transform: translate(-4px, -4px);
+}
+.brutal-shadow-sm {
+    box-shadow: 4px 4px 0px 0px rgba(0,0,0,1);
+}
+.brutal-shadow-sm-hover {
+    transition: all 0.2s ease-in-out;
+}
+.brutal-shadow-sm-hover:hover {
+    box-shadow: 6px 6px 0px 0px rgba(0,0,0,1);
+    transform: translate(-2px, -2px);
+}
+
+/* Background Patterns */
+.bg-dots {
+    background-image: radial-gradient(circle, #000 2px, transparent 2px);
+    background-size: 32px 32px;
+}
+.bg-grid {
+    background-size: 32px 32px;
+    background-image: 
+        linear-gradient(to right, rgba(0,0,0,0.15) 2px, transparent 2px), 
+        linear-gradient(to bottom, rgba(0,0,0,0.15) 2px, transparent 2px);
+}
+
+/* Animations panning */
+@keyframes pan-grid {
+    0% { background-position: 0 0; }
+    100% { background-position: -32px -32px; }
+}
+.bg-grid-animated {
+    animation: pan-grid 2s linear infinite;
+}
+
+/* Floating Shapes Animation */
+.float-shape {
+    position: absolute;
+    animation: float 6s ease-in-out infinite;
+    z-index: 5;
+}
+
+@keyframes float {
+    0% { transform: translateY(0px) rotate(0deg); }
+    50% { transform: translateY(-20px) rotate(15deg); }
+    100% { transform: translateY(0px) rotate(0deg); }
+}
+
+.float-shape-2 {
+    animation-duration: 8s;
+    animation-delay: 1s;
+}
+
+/* Swing Animation for Lanyard */
+@keyframes swing {
+    0% { transform: rotate(0deg); }
+    15% { transform: rotate(8deg); }
+    30% { transform: rotate(-5deg); }
+    45% { transform: rotate(3deg); }
+    60% { transform: rotate(-1deg); }
+    75% { transform: rotate(1deg); }
+    100% { transform: rotate(0deg); }
+}
+.animate-swing {
+    transform-origin: top center;
+}
+.animate-swing:hover {
+    animation: swing 1.5s ease-in-out forwards;
+}
+
+/* 3D Flip Utilities for ID Card */
+.flip-container {
+    perspective: 1000px;
+}
+.flipper {
+    transition: 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+    transform-style: preserve-3d;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.flip-container:hover .flipper {
+    transform: rotateY(180deg);
+}
+.front, .back {
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.front {
+    z-index: 2;
+    transform: rotateY(0deg);
+}
+.back {
+    transform: rotateY(180deg);
+}
+
+/* Police Line Background Ribbon */
+.bg-police-line {
+    background-color: #ffde59;
+    background-image: repeating-linear-gradient(
+        -45deg,
+        transparent,
+        transparent 30px,
+        rgba(0,0,0,0.15) 30px,
+        rgba(0,0,0,0.15) 60px
+    );
+}
+
+@keyframes marquee-fast {
+    0% { transform: translateX(0%); }
+    100% { transform: translateX(-50%); }
+}
+
+.animate-marquee-fast {
+    display: flex;
+    white-space: nowrap;
+    animation: marquee-fast 12s linear infinite;
+}
+
+/* Global Content Marquee */
+@keyframes marquee {
+    0% { transform: translateX(0%); }
+    100% { transform: translateX(-100%); }
+}
+.animate-marquee {
+    display: inline-block;
+    white-space: nowrap;
+    animation: marquee 20s linear infinite;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 16px;
+}
+::-webkit-scrollbar-track {
+    background: #fdfbf7; 
+    border-left: 4px solid #000;
+}
+::-webkit-scrollbar-thumb {
+    background: #000; 
+    border-left: 4px solid #000;
+    border-right: 4px solid #000;
+}
